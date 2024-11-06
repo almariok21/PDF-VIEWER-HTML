@@ -100,7 +100,7 @@ input[type="file"]:focus {
 }
 
 footer {
-    background-color: #6495ED;
+    background-color: #0056b3;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -109,7 +109,7 @@ footer {
 }
 
 footer a {
-    color: #17a2b8;
+    color: #0056b3;;
     text-decoration: none;
     font-weight: bold;
 }
