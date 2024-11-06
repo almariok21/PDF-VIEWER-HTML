@@ -1,0 +1,123 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+#pdf-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Contenedor de controles */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-right: 15px;
+}
+
+.controls input[type="file"] {
+    font-size: 16px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#clearBtn {
+    background-color: #dc3545;
+}
+
+#clearBtn:hover {
+    background-color: #c82333;
+}
+
+/* Canvas donde se renderiza el PDF */
+#pdf-canvas {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    height: auto;
+}
+
+/* Efectos de transición */
+button,
+input[type="file"] {
+    transition: all 0.2s ease;
+}
+
+button:focus,
+input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+}
+
+footer a {
+    color: #17a2b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}

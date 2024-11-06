@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF-VIEWER-HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pdf-container">
+        <div class="controls">
+            <label for="file-upload">Subir PDF</label>
+            <input type="file" id="file-upload" accept="application/pdf" />
+            <div>
+                <button id="prevPageBtn">Anterior</button>
+                <button id="nextPageBtn">Siguiente</button>
+                <button id="clearBtn">Limpiar</button>
+            </div>
+        </div>
+        <canvas id="pdf-canvas"></canvas>
+        <footer>
+            <div class="footer-content">
+                <p>Desarrollado por <strong>Kevin Jesus Almario Orozco</strong></p>
+                <p><a href="https://github.com/almariok21" target="_blank">Visita mi GitHub</a></p>
+            </div>
+        </footer>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
