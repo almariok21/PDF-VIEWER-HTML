@@ -12,6 +12,7 @@ body {
     padding: 20px;
 }
 
+/* Contenedor principal */
 #pdf-container {
     width: 80%;
     max-width: 900px;
@@ -29,6 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .controls label {
@@ -120,4 +122,70 @@ footer a:hover {
 
 footer .footer-content p {
     margin: 5px 0;
+}
+
+/* Media Queries para pantallas pequeñas y móviles */
+
+/* Para pantallas de hasta 768px (tabletas y móviles grandes) */
+@media screen and (max-width: 768px) {
+    #pdf-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls label {
+        margin-bottom: 10px;
+    }
+
+    .controls input[type="file"], .controls button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #pdf-canvas {
+        height: auto;
+        margin-top: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Para pantallas más pequeñas (móviles pequeños y teléfonos) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #pdf-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .controls label {
+        font-size: 14px;
+    }
+
+    .controls input[type="file"], .controls button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .controls button {
+        margin-left: 0;
+    }
+
+    #pdf-canvas {
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
